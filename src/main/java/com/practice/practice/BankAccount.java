@@ -18,7 +18,6 @@ public abstract class BankAccount implements BankAccountInterface {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long accountID;
-    @JsonFormat(pattern= "yyyy-mm-dd")
     @Column(name = "Date_Opened")
     private Instant dateOpened;
     @JsonIgnore
